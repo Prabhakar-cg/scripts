@@ -1,0 +1,15 @@
+---
+- name: Install httpd using ansible
+  hosts: locahost
+  become: true
+  tasks:
+    - name: Update the System Packages
+      yum:
+        name: httpd
+        state: latest
+
+    - name: Start and Enable httpd on sever
+      systemd:
+        name: httpd
+        state: started
+        daemon_reload: true
