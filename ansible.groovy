@@ -1,9 +1,7 @@
 folder('artemis') {
     displayName('Artemis')
     description('Artemis mission')
-}
-
-pipelineJob('Myfirstpipeline') {
+    pipelineJob('Myfirstpipeline') {
     definition {
         cpsScm {
             scm {
@@ -12,3 +10,6 @@ pipelineJob('Myfirstpipeline') {
         }
     }
 }
+}
+
+
