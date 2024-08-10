@@ -9,6 +9,7 @@ job('artemis/myfirstjob') {
         git('https://github.com/Prabhakar-cg/scripts.git')
     }
     steps {
+        shell("whoami")
         shell("sudo yum install ansible")
     }
 }
