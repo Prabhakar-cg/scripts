@@ -8,6 +8,9 @@ job('artemis/myfirstjob') {
     scm {
         git('https://github.com/Prabhakar-cg/scripts.git')
     }
+    steps {
+        shell("yum install ansible")
+    }
 }
 
 
